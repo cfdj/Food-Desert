@@ -9,4 +9,23 @@ public class Street : MonoBehaviour
 
     public GameObject LeftSpawn;
     public GameObject RightSpawn;
+
+    public void LeftTriggerEnter()
+    {
+        if (Left != null)
+        {
+            Map.map.intersectionOn(Left);
+        }
+    }
+    public void RightTriggerEnter()
+    {
+        if (Right != null)
+        {
+            Map.map.intersectionOn(Right);
+        }
+    }
+    public void intersectionOff()
+    {
+        Map.map.intersectionOff();
+    }
 }
