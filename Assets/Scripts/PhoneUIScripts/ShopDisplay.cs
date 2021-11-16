@@ -15,6 +15,12 @@ public class ShopDisplay : MonoBehaviour
         {
             sprite.sprite = shop.shopFront;
             shopName.text = shop.name;
+            string currency = "";
+            for(int i = 0; i < shop.priceEst; i++)
+            {
+                currency += "£";
+            }
+            price.text = currency;
         }
     }
 
