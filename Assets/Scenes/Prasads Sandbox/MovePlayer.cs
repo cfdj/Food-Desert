@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEngine.UI;
 
 public class MovePlayer : MonoBehaviour
 {
@@ -15,10 +14,8 @@ public class MovePlayer : MonoBehaviour
 
     void Start ()
     {
-        if (EnterShop != null)
-        {
-            EnterShop.SetActive(false);
-        }
+        EnterShop.SetActive(false);
+    
     }
 
      void OnTriggerEnter2D(Collider2D other)
@@ -26,7 +23,7 @@ public class MovePlayer : MonoBehaviour
         EnterShop.SetActive(true);
         if(thisShop != null)
         {
-        for(int i = 0; i<foodList.Count; i++){
+        for(int i = 0; i<4; i++){
             foodList[i].gameObject.SetActive(true);
             foodList[i].SetFood(thisShop.menu[i]);
 
@@ -37,10 +34,6 @@ public class MovePlayer : MonoBehaviour
 void OnTriggerExit2D(Collider2D other)
     {
         EnterShop.SetActive(false);
-        for(int i = 0; i< foodList.Count; i++)
-        {
-            foodList[i].gameObject.SetActive(false);
-        }
 
     }
 
