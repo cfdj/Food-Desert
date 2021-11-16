@@ -511,7 +511,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1479856333}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -529,7 +529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb550f26133f0074ca7f674fe9247242, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 0}
+  slider: {fileID: 1020752252}
 --- !u!1 &1078778579
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hungerbar: {fileID: 1020752253}
+  hunger: 0
 --- !u!4 &1690709989
 Transform:
   m_ObjectHideFlags: 0

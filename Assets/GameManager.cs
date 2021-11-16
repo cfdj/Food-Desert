@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     {
         
             hunger = hunger + 1;
-          
 
+        hungerbar.set(hunger);
     }
 }

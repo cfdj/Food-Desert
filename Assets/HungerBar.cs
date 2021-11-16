@@ -10,9 +10,9 @@ public class HungerBar : MonoBehaviour
     public Slider slider;
     
 
-    public void set()
+    public void set(float newValue)
     {
-        slider.value = 5;
+        slider.value = newValue;
     }
 }
 
