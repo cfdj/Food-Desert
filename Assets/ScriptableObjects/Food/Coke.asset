@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e6bc4bfe87d1d5408bc3212dcc44c9a, type: 3}
   m_Name: Coke
   m_EditorClassIdentifier: 
-  price: 0
+  price: 12
   hungerLoss: 0
   image: {fileID: 21300000, guid: 1c539f0c06d0e42ab86ff6842ac04fdc, type: 3}

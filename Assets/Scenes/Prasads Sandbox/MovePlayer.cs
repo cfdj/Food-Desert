@@ -25,7 +25,7 @@ public class MovePlayer : MonoBehaviour
         EnterShop.SetActive(true);
         if(thisShop != null)
         {
-        for(int i = 0; i<4; i++){
+        for(int i = 0; i < foodList.Count; i++){
             foodList[i].gameObject.SetActive(true);
             foodList[i].SetFood(thisShop.menu[i]);
 
@@ -36,7 +36,7 @@ public class MovePlayer : MonoBehaviour
 void OnTriggerExit2D(Collider2D other)
     {
         EnterShop.SetActive(false);
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < foodList.Count; i++)
         {
             foodList[i].gameObject.SetActive(false);
 

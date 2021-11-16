@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e6bc4bfe87d1d5408bc3212dcc44c9a, type: 3}
   m_Name: Salmon
   m_EditorClassIdentifier: 
-  price: 6
+  price: 12
   hungerLoss: 5
   image: {fileID: 21300000, guid: 3170c65281502c2439d8b6e79710579f, type: 3}
