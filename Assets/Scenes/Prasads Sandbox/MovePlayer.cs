@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEngine.UI;
 
 public class MovePlayer : MonoBehaviour
 {
@@ -16,7 +15,7 @@ public class MovePlayer : MonoBehaviour
     void Start ()
     {
         EnterShop.SetActive(false);
-        
+    
     }
 
      void OnTriggerEnter2D(Collider2D other)
@@ -35,7 +34,6 @@ public class MovePlayer : MonoBehaviour
 void OnTriggerExit2D(Collider2D other)
     {
         EnterShop.SetActive(false);
-        
 
     }
 
