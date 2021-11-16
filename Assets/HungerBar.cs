@@ -4,13 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class HungerBar : MonoBehaviour
+
+
 {
     public Slider slider;
+    
 
     public void set()
     {
         slider.value = 5;
     }
 }
- 
+
+
 
