@@ -17,4 +17,8 @@ public class FoodInTheShop : MonoBehaviour
         sprite.sprite = food.image;
         price.text = "$" + food.price;
     }
+    public void tryToBuy(){
+        GameManager.gameManager.BuyFood(food);
+
+    }
 }

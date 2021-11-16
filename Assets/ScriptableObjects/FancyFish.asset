@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: FancyFish
   m_EditorClassIdentifier: 
   shopFront: {fileID: 21300000, guid: e5ca127253ca9874fa83595d2ee79e75, type: 3}
-  menu: []
-  priceEst: 1
+  menu:
+  - {fileID: 11400000, guid: 68b5b02137712c046a5f255732b1e102, type: 2}
+  - {fileID: 11400000, guid: 63e11575877df46439411555a566deaf, type: 2}
+  - {fileID: 11400000, guid: 3ef00e4ad7400654eaebe2049fe2332d, type: 2}
+  - {fileID: 11400000, guid: ceb975f80e3240e499ae06f02a83f67f, type: 2}
+  priceEst: 3

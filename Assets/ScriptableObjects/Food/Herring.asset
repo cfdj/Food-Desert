@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e6bc4bfe87d1d5408bc3212dcc44c9a, type: 3}
   m_Name: Herring
   m_EditorClassIdentifier: 
-  price: 6
+  price: 12
   hungerLoss: 5
   image: {fileID: 21300000, guid: cc007dc5d2d737643b89d959db0388e0, type: 3}
