@@ -24,7 +24,7 @@ public class ShopDisplay : MonoBehaviour
         }
     }
 
-    void SetShop(Shop newShop)
+    public void SetShop(Shop newShop)
     {
         shop = newShop;
         sprite.sprite = shop.shopFront;

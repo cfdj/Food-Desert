@@ -8,10 +8,16 @@ public class PhoneManager : MonoBehaviour
     //private Message currentMessage;
     public Image bigNotification;
     public Image smallNotification;
+
+    public List<ShopDisplay> displays;
+    public List<Shop> shops;
     // Start is called before the first frame update
     void Start()
     {
-        
+        for (int i = 0; i < displays.Count; i++)
+        {
+            displays[i].SetShop(shops[i]);
+        }
     }
     public void recieveMessage()
     {
