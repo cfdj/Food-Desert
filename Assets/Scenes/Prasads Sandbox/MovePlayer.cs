@@ -14,8 +14,10 @@ public class MovePlayer : MonoBehaviour
 
     void Start ()
     {
-        EnterShop.SetActive(false);
-    
+        if (EnterShop != null)
+        {
+            EnterShop.SetActive(false);
+        }
     }
 
      void OnTriggerEnter2D(Collider2D other)
@@ -34,7 +36,11 @@ public class MovePlayer : MonoBehaviour
 void OnTriggerExit2D(Collider2D other)
     {
         EnterShop.SetActive(false);
+        for (int i = 0; i < 4; i++)
+        {
+            foodList[i].gameObject.SetActive(false);
 
+        }
     }
 
     public void teleport()
