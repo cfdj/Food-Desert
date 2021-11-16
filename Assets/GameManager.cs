@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public HungerBar hungerbar;
     public float hunger = 25;
-
+    public string messageContent;
 
 
 
@@ -18,5 +18,7 @@ public class GameManager : MonoBehaviour
             hunger = hunger + 1;
 
         hungerbar.set(hunger);
+
+        
     }
 }
