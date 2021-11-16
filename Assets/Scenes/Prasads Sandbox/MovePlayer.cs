@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//using UnityEngine.UI;
 
 public class MovePlayer : MonoBehaviour
 {
@@ -9,35 +9,38 @@ public class MovePlayer : MonoBehaviour
     public GameObject Office;
     public GameObject player;
     public GameObject EnterShop;
-    //public GameObject ExitShop;
+    public List<FoodInTheShop> foodList;
+    public Shop thisShop;
+
 
     void Start ()
     {
         EnterShop.SetActive(false);
-        //ExitShop.SetActive(false);
+        
     }
 
      void OnTriggerEnter2D(Collider2D other)
     {
         EnterShop.SetActive(true);
-        //ExitShop.SetActive(true);
-    //player.transform.position = Shop.transform.position;
+        if(thisShop != null)
+        {
+        for(int i = 0; i<4; i++){
+            foodList[i].gameObject.SetActive(true);
+            foodList[i].SetFood(thisShop.menu[i]);
+
+        }
+        }
+        
     }
 void OnTriggerExit2D(Collider2D other)
     {
         EnterShop.SetActive(false);
-       // ExitShop.SetActive(false);
+        
 
     }
 
     public void teleport()
     {
-        //If (EnterShop = true)
-        //{
         player.transform.position = Shop.transform.position;
     }
-   // }
-
-
-    
 }
