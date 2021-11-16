@@ -6,6 +6,7 @@ using UnityEngine;
 public class MovePlayer : MonoBehaviour
 {
     public GameObject Shop;
+    public GameObject Office;
     public GameObject player;
     public GameObject EnterShop;
     //public GameObject ExitShop;
