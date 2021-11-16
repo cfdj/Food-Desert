@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783fb5a19415d9648aed0f4537fa2008, type: 3}
   m_Name: Convenience
   m_EditorClassIdentifier: 
-  shopFront: {fileID: 0}
-  menu: []
+  shopFront: {fileID: 21300000, guid: a09d67af23ffb2247a09de6f9126c44d, type: 3}
+  menu:
+  - {fileID: 11400000, guid: 5a95e1df4b475864ea08aeb351af76e2, type: 2}
