@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public HungerBar hungerbar;
     public float hunger = 25;
     public int Day = 1;
+    public Timer timer;
+    public float totalTime = 180f;
     
 
     public string messageContent;
@@ -89,6 +91,7 @@ void Start()
     public void NextDay()
     {
         Day = Day + 1;
+        timeRemaining = totalTime;
     }
     
 }
