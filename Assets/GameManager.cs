@@ -91,7 +91,7 @@ void Start()
     public void NextDay()
     {
         Day = Day + 1;
-        timeRemaining = totalTime;
+        timer.timeRemaining = totalTime;
     }
     
 }
