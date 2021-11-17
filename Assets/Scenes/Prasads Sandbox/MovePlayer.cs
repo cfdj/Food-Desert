@@ -8,6 +8,7 @@ public class MovePlayer : MonoBehaviour
     public GameObject Office;
     public GameObject player;
     public GameObject EnterShop;
+    public GameObject foodHolder;
     public List<FoodInTheShop> foodList;
     public Shop thisShop;
 
@@ -25,10 +26,11 @@ public class MovePlayer : MonoBehaviour
         EnterShop.SetActive(true);
         if(thisShop != null)
         {
+            foodHolder.gameObject.SetActive(true);
         for(int i = 0; i < foodList.Count; i++){
             foodList[i].gameObject.SetActive(true);
             foodList[i].SetFood(thisShop.menu[i]);
-
+    
         }
         }
         
@@ -36,10 +38,14 @@ public class MovePlayer : MonoBehaviour
 void OnTriggerExit2D(Collider2D other)
     {
         EnterShop.SetActive(false);
-        for (int i = 0; i < foodList.Count; i++)
+        if (thisShop != null)
         {
-            foodList[i].gameObject.SetActive(false);
+            for (int i = 0; i < foodList.Count; i++)
+            {
+                foodList[i].gameObject.SetActive(false);
 
+            }
+            foodHolder.gameObject.SetActive(false);
         }
     }
 

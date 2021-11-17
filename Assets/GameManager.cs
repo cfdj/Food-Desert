@@ -7,7 +7,11 @@ public class GameManager : MonoBehaviour
 
 {
     public HungerBar hungerbar;
-    public float hunger = 25;
+    public float Initialhunger = 25;
+    public float MaxHunger = 100;
+    public float hunger = 0;
+    public int hungerIncrement = 120; //how many frames it takes to increment hunger
+    public int currentHungerIncrement = 0;
     public int Day = 1;
     public Timer timer;
     public float totalTime = 180f;
@@ -32,16 +36,20 @@ void Start()
         gameManager = this;
     }
     UpdateMoney();
+        hunger = Initialhunger;
+        hungerbar.set(hunger);
 }
 
-    // Update is called once per frame
-    void Update()
+    // Fixed update for consistent timing
+    void FixedUpdate()
     {
-        
+        currentHungerIncrement += 1;
+        if (currentHungerIncrement >= hungerIncrement)
+        {
+            currentHungerIncrement = 0;
             hunger = hunger + 1;
-
-        hungerbar.set(hunger);
-
+            hungerbar.set(hunger);
+        }
         
     }
 
@@ -79,6 +87,7 @@ void Start()
 // code for buying food items
     public void BuyFood(Food item)
     {
+
         if (CheckMoney(item.price))
         {
             ReduceMoney(item.price);
@@ -92,6 +101,7 @@ void Start()
     {
         Day = Day + 1;
         timer.timeRemaining = totalTime;
+        hunger += Initialhunger; //adding hunger for the start of the day
     }
     
 }

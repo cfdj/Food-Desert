@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Fries
   m_EditorClassIdentifier: 
   price: 12
-  hungerLoss: 0
+  hungerLoss: 6
   image: {fileID: 21300000, guid: d298893f5e31240c2a21664e873774e5, type: 3}

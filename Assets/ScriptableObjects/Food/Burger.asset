@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Burger
   m_EditorClassIdentifier: 
   price: 12
-  hungerLoss: 0
+  hungerLoss: 10
   image: {fileID: 21300000, guid: 2a78b50ee5f329d4e89195bc3bcf7d36, type: 3}

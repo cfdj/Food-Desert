@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Donut
   m_EditorClassIdentifier: 
   price: 12
-  hungerLoss: 0
+  hungerLoss: 5
   image: {fileID: 21300000, guid: f2684cbaf8d4ad84b9c495dc19bc56bb, type: 3}

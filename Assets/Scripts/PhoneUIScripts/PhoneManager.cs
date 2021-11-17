@@ -5,12 +5,17 @@ using UnityEngine.UI;
 public class PhoneManager : MonoBehaviour
 {
     public bool messageNotification;
-    //private Message currentMessage;
+    private Messages currentMessage;
     public Image bigNotification;
     public Image smallNotification;
 
     public List<ShopDisplay> displays;
     public List<Shop> shops;
+
+    //Notification ui
+    public Button messageBackground;
+    public Text messageText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +25,9 @@ public class PhoneManager : MonoBehaviour
             displays[i].gameObject.SetActive(true);
         }
     }
-    public void recieveMessage()
+    public void recieveMessage(Messages newMessage)
     {
-        //currentMessage = newMessage;
+        currentMessage = newMessage;
         messageNotification = true;
         bigNotification.gameObject.SetActive(true);
         smallNotification.gameObject.SetActive(true);
@@ -33,6 +38,13 @@ public class PhoneManager : MonoBehaviour
         //do something with the current message
         messageNotification = false;
         bigNotification.gameObject.SetActive(false);
-        smallNotification.gameObject.SetActive(true);
+        smallNotification.gameObject.SetActive(false);
+
+        messageText.text = currentMessage.messageContent;
+        messageBackground.gameObject.SetActive(true);
+    }
+    public void onClickReadNotification()
+    {
+        messageBackground.gameObject.SetActive(false);
     }
 }
