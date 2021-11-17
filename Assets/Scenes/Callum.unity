@@ -676,6 +676,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: PhoneScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 6552812021269907453, guid: 353366cdfa204d34c9d7da135b30a513, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552812021269907453, guid: 353366cdfa204d34c9d7da135b30a513, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552812021269907453, guid: 353366cdfa204d34c9d7da135b30a513, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806887879691786822, guid: 353366cdfa204d34c9d7da135b30a513, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 353366cdfa204d34c9d7da135b30a513, type: 3}
 --- !u!1001 &862387497335228831

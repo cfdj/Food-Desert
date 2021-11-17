@@ -14,9 +14,10 @@ public class PhoneManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < displays.Count; i++)
+        for (int i = 0; i < displays.Count && i< shops.Count; i++)
         {
             displays[i].SetShop(shops[i]);
+            displays[i].gameObject.SetActive(true);
         }
     }
     public void recieveMessage()
