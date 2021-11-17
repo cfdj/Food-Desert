@@ -818,6 +818,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hungerbar: {fileID: 624382789}
   hunger: 25
+  messageContent: 
   money: 50
   moneyText: {fileID: 1006394675}
 --- !u!4 &1033848692
