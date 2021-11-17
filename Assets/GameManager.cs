@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 {
     public HungerBar hungerbar;
     public float hunger = 25;
+    public int Day = 1;
+    
 
     public string messageContent;
 
@@ -83,4 +85,10 @@ void Start()
 
         } 
     }
+// code for day cycle
+    public void NextDay()
+    {
+        Day = Day + 1;
+    }
+    
 }
