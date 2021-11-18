@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BankMessage
   m_EditorClassIdentifier: 
   sender: BANK ALERT
-  messageContent: "Payment from OFFICE CORP Account Balance: \xA350 You are no longer
+  messageContent: "Payment from GBHOUSE CORP Account Balance: \xA350 You are no longer
     using your overdraft "
   reply: {fileID: 0}
   ignore: {fileID: 0}
