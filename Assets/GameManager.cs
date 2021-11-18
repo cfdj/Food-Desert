@@ -19,13 +19,14 @@ public class GameManager : MonoBehaviour
 
 
     public List<Messages> todaysMessages;
-
+    public MessageDays messageDays;
 
     public float money = 50;
     public Text moneyText;
 
 
     public static GameManager gameManager;
+    public GameOverScreen gameOverScreen;
 
 void Start()
 {
@@ -36,9 +37,12 @@ void Start()
     {
         gameManager = this;
     }
-    UpdateMoney();
+        UpdateMoney();
         hunger = Initialhunger;
         hungerbar.set(hunger);
+        messageDays.Setup();//setting up the list within message days
+        todaysMessages = messageDays.getDaysMessages(0);
+        phone.recieveMessage(todaysMessages);
 }
 
     // Fixed update for consistent timing
@@ -51,7 +55,7 @@ void Start()
             hunger = hunger + 1;
             hungerbar.set(hunger);
         }
-        
+        GameOver();
     }
 
 // add money on a payday
@@ -93,7 +97,7 @@ void Start()
         {
             ReduceMoney(item.price);
             hunger = hunger - item.hungerLoss;
-        hungerbar.set(hunger);
+            hungerbar.set(hunger);
 
         } 
     }
@@ -104,7 +108,22 @@ void Start()
         timer.timeRemaining = totalTime;
         hunger += Initialhunger; //adding hunger for the start of the day
         //Giving the phone todays messages:
+        todaysMessages = messageDays.getDaysMessages(Day);
         phone.recieveMessage(todaysMessages);
     }
-    
+
+    // code for game overs
+    public void GameOver()
+    {
+        if (money <= 0)
+        {
+            gameOverScreen.NoMoney();
+        }
+
+        if (hunger >= MaxHunger)
+        {
+            gameOverScreen.Starved();
+        }
+
+    }
 }
