@@ -30,7 +30,13 @@ public class PhoneManager : MonoBehaviour
     }
     public void recieveMessage(List<Messages> newMessages)
     {
-        //foreach message from yesterday still here, say it was ignored
+        foreach(Messages m in todaysMessages) //set all of the previous days messages as ignored if they're still there
+        {
+            if(m.ignore != null)
+            {
+                GameManager.gameManager.addMessage(m.ignore, m.ignoreDay);
+            }
+        }
         todaysMessages = newMessages;
         if (todaysMessages.Count > 0)
         {
@@ -61,13 +67,19 @@ public class PhoneManager : MonoBehaviour
     public void onClickRespond()
     {
         messageBackground.gameObject.SetActive(false);
-        //do something in the message to tell the game manager it was responded to
+        if (currentMessage.reply != null)
+        {
+            GameManager.gameManager.addMessage(currentMessage.reply, currentMessage.replyDay);
+        }
         nextMessage();
     }
     public void onClickIgnore()
     {
         messageBackground.gameObject.SetActive(false);
-        //do something in the message to tell the game manager it was ignored
+        if (currentMessage.ignore != null)
+        {
+            GameManager.gameManager.addMessage(currentMessage.ignore, currentMessage.ignoreDay);
+        }
         nextMessage();
     }
     public void nextMessage()

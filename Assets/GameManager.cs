@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     public GameOverScreen gameOverScreen;
 
     public GameObject WorkScreen;
+    private bool AtWork = false;
 
 void Start()
 {
@@ -51,14 +52,17 @@ void Start()
     // Fixed update for consistent timing
     void FixedUpdate()
     {
-        currentHungerIncrement += 1;
-        if (currentHungerIncrement >= hungerIncrement)
+        if (!AtWork)
         {
-            currentHungerIncrement = 0;
-            hunger = hunger + 1;
-            hungerbar.set(hunger);
+            currentHungerIncrement += 1;
+            if (currentHungerIncrement >= hungerIncrement)
+            {
+                currentHungerIncrement = 0;
+                hunger = hunger + 1;
+                hungerbar.set(hunger);
+            }
+            GameOver();
         }
-        GameOver();
         if (Input.GetButtonDown("Cancel"))
         {
             Application.Quit();
@@ -111,13 +115,30 @@ void Start()
 // code for day cycle
     public void NextDay()
     {
+        StartCoroutine(workDay());
         Day = Day + 1;
         timer.timeRemaining = totalTime;
         hunger += hungerGain;
         //Giving the phone todays messages:
         todaysMessages = messageDays.getDaysMessages(Day);
         phone.recieveMessage(todaysMessages);
+        
+    }
+    // work day timer
+    IEnumerator workDay()
+    {
         WorkScreen.SetActive(true);
+        AtWork = true;
+        yield return new WaitForSeconds(10f);
+        WorkScreen.SetActive(false);
+        AtWork = false;
+        yield return null;
+    }
+
+    //adding a message to the list of messages for a day:
+    public void addMessage(Messages toAdd,int dayNum)
+    {
+        messageDays.AddMessage(toAdd, dayNum);
     }
 
     // code for game overs

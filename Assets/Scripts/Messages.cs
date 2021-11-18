@@ -9,6 +9,7 @@ public class Messages : ScriptableObject
     public string messageContent;
     public Messages reply;
     public Messages ignore;
-
+    public int replyDay;
+    public int ignoreDay;
 
 }
