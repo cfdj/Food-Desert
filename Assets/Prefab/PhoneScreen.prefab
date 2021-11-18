@@ -630,6 +630,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 022866dc0a355f249b71a990d9876afe, type: 2}
   messageBackground: {fileID: 1535455921037209952}
   messageText: {fileID: 1523368994257439105}
+  messageSender: {fileID: 8468023818305389045}
 --- !u!1 &627144540813910429
 GameObject:
   m_ObjectHideFlags: 0

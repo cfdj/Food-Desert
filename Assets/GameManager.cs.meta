@@ -3,7 +3,14 @@ guid: fe1de2e930ae7c74fa464c8c7ae8ea55
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - phone: {instanceID: 0}
+  - hungerbar: {instanceID: 0}
+  - timer: {instanceID: 0}
+  - messageDays: {instanceID: 0}
+  - moneyText: {instanceID: 0}
+  - gameOverScreen: {instanceID: 0}
+  - WorkScreen: {fileID: 3987269355263721, guid: c64a1aaaa46644c3caed360b526f457c, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
