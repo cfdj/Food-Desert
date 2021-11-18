@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Hansel Message 1
   m_EditorClassIdentifier: 
   sender: ' Hansel '
-  messageContent: 
-  reply: {fileID: 0}
-  ignore: {fileID: 0}
+  messageContent: Hi! How's settling in going? I heard you managed to find a job?
+  reply: {fileID: 11400000, guid: c935c2ef2f1a1a74da3cc87e96d3b987, type: 2}
+  ignore: {fileID: 11400000, guid: 1cd66a0f221a9df4fa9ee4126946608f, type: 2}

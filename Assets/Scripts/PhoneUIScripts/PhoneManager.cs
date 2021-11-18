@@ -17,6 +17,7 @@ public class PhoneManager : MonoBehaviour
     //Notification ui
     public Image messageBackground;
     public Text messageText;
+    public Text messageSender;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +55,7 @@ public class PhoneManager : MonoBehaviour
             numMessages.text = "" + todaysMessages.Count;
         }
         messageText.text = currentMessage.messageContent;
+        messageSender.text = currentMessage.sender;
         messageBackground.gameObject.SetActive(true);
     }
     public void onClickRespond()

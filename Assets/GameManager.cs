@@ -56,6 +56,10 @@ void Start()
             hungerbar.set(hunger);
         }
         GameOver();
+        if (Input.GetButtonDown("Cancel"))
+        {
+            Application.Quit();
+        }
     }
 
 // add money on a payday
@@ -106,7 +110,7 @@ void Start()
     {
         Day = Day + 1;
         timer.timeRemaining = totalTime;
-        hunger += Initialhunger; //adding hunger for the start of the day
+        hunger += Initialhunger; //adding hunger for the start of the day, currently this is way too much
         //Giving the phone todays messages:
         todaysMessages = messageDays.getDaysMessages(Day);
         phone.recieveMessage(todaysMessages);
