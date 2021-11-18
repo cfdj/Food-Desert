@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d6a12971c6897d44b58f6c66b14751e, type: 3}
-  m_Name: Messages
+  m_Name: Hansel Message Ignore
   m_EditorClassIdentifier: 
-  messageContent: "Bank Alert: Payment from OFFICE CORP Account Balance: \xA350 You
-    are no longer using your overdraft "
+  sender: 
+  messageContent: 
+  reply: {fileID: 0}
+  ignore: {fileID: 0}
