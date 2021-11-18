@@ -16,3 +16,5 @@ MonoBehaviour:
   messageContent: 'Next time I''m there, I''ll buy you a treat! xx '
   reply: {fileID: 0}
   ignore: {fileID: 0}
+  replyDay: 2
+  ignoreDay: 2

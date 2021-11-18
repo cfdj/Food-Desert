@@ -1704,13 +1704,13 @@ MonoBehaviour:
   hunger: 0
   hungerIncrement: 120
   currentHungerIncrement: 0
-  Day: 1
   timer: {fileID: 1507695464}
   totalTime: 180
   todaysMessages: []
   messageDays: {fileID: 11400000, guid: 6f9009c9eb0ea184f98da416c9c4012b, type: 2}
   money: 50
   moneyText: {fileID: 721854934}
+  moneyGain: 10
   gameOverScreen: {fileID: 2026057725}
   WorkScreen: {fileID: 13251183}
 --- !u!4 &600305834
@@ -5200,9 +5200,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4859603402116998488, guid: 3f8c1d6b69ff5e84cae98d43fede76a9, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4859603402522910339, guid: 3f8c1d6b69ff5e84cae98d43fede76a9, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859603402522910339, guid: 3f8c1d6b69ff5e84cae98d43fede76a9, type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859603402522910339, guid: 3f8c1d6b69ff5e84cae98d43fede76a9, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1600
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859603402522910339, guid: 3f8c1d6b69ff5e84cae98d43fede76a9, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 4859603402522910342, guid: 3f8c1d6b69ff5e84cae98d43fede76a9, type: 3}
       propertyPath: m_Name
@@ -5290,6 +5306,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4859603402522910365, guid: 3f8c1d6b69ff5e84cae98d43fede76a9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859603403268737459, guid: 3f8c1d6b69ff5e84cae98d43fede76a9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859603403278379684, guid: 3f8c1d6b69ff5e84cae98d43fede76a9, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859603403642688053, guid: 3f8c1d6b69ff5e84cae98d43fede76a9, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859603404102286450, guid: 3f8c1d6b69ff5e84cae98d43fede76a9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859603404126481255, guid: 3f8c1d6b69ff5e84cae98d43fede76a9, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

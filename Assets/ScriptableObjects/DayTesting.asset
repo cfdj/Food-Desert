@@ -10,17 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2271bbab68722b245be6782240b0cba5, type: 3}
-  m_Name: Days
+  m_Name: DayTesting
   m_EditorClassIdentifier: 
-  Day1:
-  - {fileID: 11400000, guid: 5d4d5671e8b3d394eb37b5e5496cd36f, type: 2}
-  - {fileID: 11400000, guid: bda323b97d2559d40b620359021edd17, type: 2}
-  - {fileID: 11400000, guid: e7a7e367665517444bf5482fe3936472, type: 2}
-  - {fileID: 11400000, guid: 23d1502b5b10fb64c9bce5e20cc0a15a, type: 2}
-  Day2:
-  - {fileID: 11400000, guid: 01c4dda2a51a8f64fb7c9c53cc0e155e, type: 2}
+  Day1: []
+  Day2: []
   Day3: []
   Day4: []
-  Day5: []
+  Day5:
+  - {fileID: 11400000, guid: 23d1502b5b10fb64c9bce5e20cc0a15a, type: 2}
   Day6: []
   Day7: []

@@ -16,3 +16,5 @@ MonoBehaviour:
   messageContent: 'And to think I was going to send you some money! '
   reply: {fileID: 0}
   ignore: {fileID: 0}
+  replyDay: 2
+  ignoreDay: 2

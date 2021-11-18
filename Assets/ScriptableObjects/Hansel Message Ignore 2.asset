@@ -17,3 +17,5 @@ MonoBehaviour:
     who works in a ghost town.
   reply: {fileID: 0}
   ignore: {fileID: 0}
+  replyDay: 2
+  ignoreDay: 2

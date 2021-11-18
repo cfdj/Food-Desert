@@ -16,3 +16,5 @@ MonoBehaviour:
   messageContent: 'Hello, dear. What''s it like in my old stomping grounds? '
   reply: {fileID: 11400000, guid: f897359805c1afe45aa33e6ca617e5bf, type: 2}
   ignore: {fileID: 11400000, guid: 84a05141a965964408f43c3b36a95972, type: 2}
+  replyDay: 1
+  ignoreDay: 1

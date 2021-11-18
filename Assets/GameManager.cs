@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public float hunger = 0;
     public int hungerIncrement = 120; //how many frames it takes to increment hunger
     public int currentHungerIncrement = 0;
-    public int Day = 1;
+    private int Day = 0;
     public Timer timer;
     public float totalTime = 180f;
 
@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     public float money = 50;
     public Text moneyText;
-
+    public float moneyGain = 7.7f;
 
     public static GameManager gameManager;
     public GameOverScreen gameOverScreen;
@@ -117,12 +117,16 @@ void Start()
     {
         StartCoroutine(workDay());
         Day = Day + 1;
+        if(Day/3 == 0)
+        {
+            AddMoney(moneyGain); //adding some amount of money
+        }
         timer.timeRemaining = totalTime;
         hunger += hungerGain;
         //Giving the phone todays messages:
         todaysMessages = messageDays.getDaysMessages(Day);
         phone.recieveMessage(todaysMessages);
-        
+        Debug.Log("The day: " + Day);
     }
     // work day timer
     IEnumerator workDay()

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class PhoneManager : MonoBehaviour
 {
     public bool messageNotification;
-    private List<Messages> todaysMessages; //works like a stack, with the last message being popped off when read
+    private List<Messages> todaysMessages = new List<Messages>(); //works like a stack, with the last message being popped off when read
     private Messages currentMessage;
     public Image bigNotification;
     public Image smallNotification;

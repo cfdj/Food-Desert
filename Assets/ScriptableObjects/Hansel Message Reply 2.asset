@@ -17,3 +17,5 @@ MonoBehaviour:
     to pay their employees...
   reply: {fileID: 0}
   ignore: {fileID: 0}
+  replyDay: 2
+  ignoreDay: 2

@@ -16,3 +16,5 @@ MonoBehaviour:
   messageContent: 'Too busy for me are you? '
   reply: {fileID: 11400000, guid: 04ceb4c5dd5c6ab409d895dad72c23ea, type: 2}
   ignore: {fileID: 11400000, guid: 04ceb4c5dd5c6ab409d895dad72c23ea, type: 2}
+  replyDay: 1
+  ignoreDay: 1

@@ -18,7 +18,7 @@ public class ShopDisplay : MonoBehaviour
             string currency = "";
             for(int i = 0; i < shop.priceEst; i++)
             {
-                currency += "£";
+                currency += "$";
             }
             price.text = currency;
         }
@@ -32,7 +32,7 @@ public class ShopDisplay : MonoBehaviour
         string currency = "";
         for (int i = 0; i < shop.priceEst; i++)
         {
-            currency += "£";
+            currency += "$";
         }
         price.text = currency;
     }

@@ -16,3 +16,5 @@ MonoBehaviour:
   messageContent: 'Do you want to make cash FAST? '
   reply: {fileID: 11400000, guid: 84ee65474bfacb14b99aeee60e73d54f, type: 2}
   ignore: {fileID: 11400000, guid: 84ee65474bfacb14b99aeee60e73d54f, type: 2}
+  replyDay: 2
+  ignoreDay: 2

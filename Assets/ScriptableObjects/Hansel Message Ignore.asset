@@ -16,3 +16,5 @@ MonoBehaviour:
   messageContent: 'You ok? Be careful, I heard that old barbershop is haunted! '
   reply: {fileID: 11400000, guid: 1fcacec15f4511140ab4e963d01dd2c8, type: 2}
   ignore: {fileID: 11400000, guid: a71c57a30d0ee994cac12b6afceaa058, type: 2}
+  replyDay: 1
+  ignoreDay: 1

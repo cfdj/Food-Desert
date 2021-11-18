@@ -16,3 +16,5 @@ MonoBehaviour:
   messageContent: "Yeah, maybe it\u2019s for the best GBHouse Corp will tear it down."
   reply: {fileID: 0}
   ignore: {fileID: 0}
+  replyDay: 3
+  ignoreDay: 3

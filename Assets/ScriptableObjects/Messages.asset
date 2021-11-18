@@ -17,3 +17,5 @@ MonoBehaviour:
     ahead
   reply: {fileID: 0}
   ignore: {fileID: 0}
+  replyDay: 0
+  ignoreDay: 0

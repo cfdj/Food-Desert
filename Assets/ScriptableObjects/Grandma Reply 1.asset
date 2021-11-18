@@ -17,3 +17,5 @@ MonoBehaviour:
     and old memories now. '
   reply: {fileID: 0}
   ignore: {fileID: 11400000, guid: 84a05141a965964408f43c3b36a95972, type: 2}
+  replyDay: 1
+  ignoreDay: 1

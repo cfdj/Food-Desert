@@ -16,3 +16,5 @@ MonoBehaviour:
   messageContent: 'Invest in GingrBredCoin, the tastiest crypto-currency!! '
   reply: {fileID: 11400000, guid: 23d1502b5b10fb64c9bce5e20cc0a15a, type: 2}
   ignore: {fileID: 11400000, guid: 23d1502b5b10fb64c9bce5e20cc0a15a, type: 2}
+  replyDay: 4
+  ignoreDay: 4
