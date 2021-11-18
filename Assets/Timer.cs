@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
     public float timeRemaining = 10;
     public bool timerIsRunning = false;
     public Text timeText;
-    public Text gameOver;
+    public GameOverScreen gameOver;
 
     private void Start()
     {
@@ -28,7 +28,7 @@ public class Timer : MonoBehaviour
             else
             {
                 Debug.Log("Time has run out!");
-                gameOver.gameObject.SetActive(true);
+                gameOver.Fired();
                 timeRemaining = 0;
                 timerIsRunning = false;
             }
