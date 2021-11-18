@@ -6,26 +6,24 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 
 {
-    public PhoneManager phone;
     public HungerBar hungerbar;
     public float Initialhunger = 25;
     public float MaxHunger = 100;
     public float hunger = 0;
     public int hungerIncrement = 120; //how many frames it takes to increment hunger
     public int currentHungerIncrement = 0;
+
     public int Day = 1;
     public Timer timer;
     public float totalTime = 180f;
-
-
-    public List<Messages> todaysMessages;
-
+    
+    public string messageContent;
 
     public float money = 50;
     public Text moneyText;
 
-
     public static GameManager gameManager;
+
 
 void Start()
 {
@@ -103,8 +101,6 @@ void Start()
         Day = Day + 1;
         timer.timeRemaining = totalTime;
         hunger += Initialhunger; //adding hunger for the start of the day
-        //Giving the phone todays messages:
-        phone.recieveMessage(todaysMessages);
     }
-    
-}
+
+
