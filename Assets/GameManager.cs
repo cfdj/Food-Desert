@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
     public static GameManager gameManager;
     public GameOverScreen gameOverScreen;
 
+    public GameObject WorkScreen;
+
 void Start()
 {
     if(gameManager != null && gameManager != this){
@@ -115,6 +117,7 @@ void Start()
         //Giving the phone todays messages:
         todaysMessages = messageDays.getDaysMessages(Day);
         phone.recieveMessage(todaysMessages);
+        WorkScreen.SetActive(true);
     }
 
     // code for game overs
