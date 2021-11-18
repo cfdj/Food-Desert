@@ -12,19 +12,19 @@ public class GameManager : MonoBehaviour
     public float hunger = 0;
     public int hungerIncrement = 120; //how many frames it takes to increment hunger
     public int currentHungerIncrement = 0;
+
     public int Day = 1;
     public Timer timer;
     public float totalTime = 180f;
     
-
     public string messageContent;
-
 
     public float money = 50;
     public Text moneyText;
 
-
     public static GameManager gameManager;
+
+    public GameOverScreen gameOverScreen;
 
 void Start()
 {
@@ -103,5 +103,28 @@ void Start()
         timer.timeRemaining = totalTime;
         hunger += Initialhunger; //adding hunger for the start of the day
     }
-    
+
+//game over conditions
+
+  public void GameOver()
+  {
+
+// WIP - Time end end condition
+        //if (timer <= 0)
+      //{
+        //gameOverScreen.Fired();
+      //}
+
+       if (money <= 0)
+      {
+        gameOverScreen.NoMoney();
+      }
+
+      if (hunger >= MaxHunger)
+      {
+        gameOverScreen.Starved();
+      }
+      
+  }
+
 }

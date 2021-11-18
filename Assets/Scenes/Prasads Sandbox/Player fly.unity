@@ -477,7 +477,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &507593343
 RectTransform:
   m_ObjectHideFlags: 0
@@ -511,7 +511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.046057317, g: 0.04701828, b: 0.21698111, a: 0.89411765}
+  m_Color: {r: 0.046057317, g: 0.04701828, b: 0.21698111, a: 0.77254903}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -738,7 +738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &727802027
 RectTransform:
   m_ObjectHideFlags: 0
@@ -772,7 +772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.066037714, g: 0.06198823, b: 0.06198823, a: 0.89411765}
+  m_Color: {r: 0.066037714, g: 0.06198823, b: 0.06198823, a: 0.7019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -814,7 +814,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &764819392
 RectTransform:
   m_ObjectHideFlags: 0
@@ -848,7 +848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3773585, g: 0.069419734, b: 0.069419734, a: 0.89411765}
+  m_Color: {r: 0.3773585, g: 0.069419734, b: 0.069419734, a: 0.7882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -909,6 +909,7 @@ MonoBehaviour:
   Office: {fileID: 841766912}
   player: {fileID: 208684346}
   EnterShop: {fileID: 114452308}
+  foodHolder: {fileID: 0}
   foodList: []
   thisShop: {fileID: 0}
 --- !u!50 &841766914
@@ -1207,13 +1208,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hungerbar: {fileID: 624382789}
+  Initialhunger: 25
+  MaxHunger: 100
   hunger: 25
+  hungerIncrement: 120
+  currentHungerIncrement: 0
   Day: 1
   timer: {fileID: 0}
   totalTime: 180
   messageContent: 
   money: 50
   moneyText: {fileID: 1006394675}
+  gameOverScreen: {fileID: 1274402124}
 --- !u!4 &1033848692
 Transform:
   m_ObjectHideFlags: 0
@@ -1260,6 +1266,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0c88ecf2d8904770b54b15c8bee172e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameOverFired: {fileID: 727802028}
+  GameOverNoMoney: {fileID: 764819393}
+  GameOverStarved: {fileID: 507593344}
 --- !u!114 &1274402125
 MonoBehaviour:
   m_ObjectHideFlags: 0
