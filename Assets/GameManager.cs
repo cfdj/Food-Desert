@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 
 {
+    public PhoneManager phone;
     public HungerBar hungerbar;
     public float Initialhunger = 25;
     public float MaxHunger = 100;
@@ -15,9 +16,9 @@ public class GameManager : MonoBehaviour
     public int Day = 1;
     public Timer timer;
     public float totalTime = 180f;
-    
 
-    public string messageContent;
+
+    public List<Messages> todaysMessages;
 
 
     public float money = 50;
@@ -102,6 +103,8 @@ void Start()
         Day = Day + 1;
         timer.timeRemaining = totalTime;
         hunger += Initialhunger; //adding hunger for the start of the day
+        //Giving the phone todays messages:
+        phone.recieveMessage(todaysMessages);
     }
     
 }
