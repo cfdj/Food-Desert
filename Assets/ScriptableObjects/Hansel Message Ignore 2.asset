@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d6a12971c6897d44b58f6c66b14751e, type: 3}
-  m_Name: Hansel Message Ignore
+  m_Name: Hansel Message Ignore 2
   m_EditorClassIdentifier: 
   sender: Hansel
-  messageContent: 'You ok? Be careful, I heard that old barbershop is haunted! '
-  reply: {fileID: 11400000, guid: 1fcacec15f4511140ab4e963d01dd2c8, type: 2}
-  ignore: {fileID: 11400000, guid: a71c57a30d0ee994cac12b6afceaa058, type: 2}
+  messageContent: You're not ghosting me are you? Would be approporiate for someone
+    who works in a ghost town.
+  reply: {fileID: 0}
+  ignore: {fileID: 0}

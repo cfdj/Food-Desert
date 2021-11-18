@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d6a12971c6897d44b58f6c66b14751e, type: 3}
-  m_Name: Hansel Message Ignore
+  m_Name: Grandma Reply 1
   m_EditorClassIdentifier: 
-  sender: Hansel
-  messageContent: 'You ok? Be careful, I heard that old barbershop is haunted! '
-  reply: {fileID: 11400000, guid: 1fcacec15f4511140ab4e963d01dd2c8, type: 2}
-  ignore: {fileID: 11400000, guid: a71c57a30d0ee994cac12b6afceaa058, type: 2}
+  sender: Grandma
+  messageContent: 'There used to be a market on the north-east road, just rubbish
+    and old memories now. '
+  reply: {fileID: 0}
+  ignore: {fileID: 11400000, guid: 84a05141a965964408f43c3b36a95972, type: 2}
