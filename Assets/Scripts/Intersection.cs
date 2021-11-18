@@ -16,8 +16,8 @@ public class Intersection : MonoBehaviour
 
         return connected;
     }
-}
-/*
+
+
 #if UNITY_EDITOR
     void OnDrawGizmos()
     {
@@ -35,4 +35,3 @@ public class Intersection : MonoBehaviour
     }
 }
 #endif
-*/

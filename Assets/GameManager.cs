@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public PhoneManager phone;
     public HungerBar hungerbar;
     public float Initialhunger = 25;
+    public float hungerGain = 10;
     public float MaxHunger = 100;
     public float hunger = 0;
     public int hungerIncrement = 120; //how many frames it takes to increment hunger
@@ -110,7 +111,7 @@ void Start()
     {
         Day = Day + 1;
         timer.timeRemaining = totalTime;
-        hunger += Initialhunger; //adding hunger for the start of the day, currently this is way too much
+        hunger += hungerGain;
         //Giving the phone todays messages:
         todaysMessages = messageDays.getDaysMessages(Day);
         phone.recieveMessage(todaysMessages);

@@ -5,14 +5,14 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Days", menuName = "ScriptableObject/Days")]
 public class MessageDays : ScriptableObject
 {
-    public List<Messages> Day1;
-    public List<Messages> Day2;
-    public List<Messages> Day3;
-    public List<Messages> Day4;
-    public List<Messages> Day5;
-    public List<Messages> Day6;
-    public List<Messages> Day7;
-    
+    public List<Messages> Day1 = new List<Messages>();
+    public List<Messages> Day2 = new List<Messages>();
+    public List<Messages> Day3 = new List<Messages>();
+    public List<Messages> Day4 = new List<Messages>();
+    public List<Messages> Day5 = new List<Messages>();
+    public List<Messages> Day6 = new List<Messages>();
+    public List<Messages> Day7 = new List<Messages>();
+
     private List<List<Messages>> days = new List<List<Messages>>();
     public void Setup()
     {
